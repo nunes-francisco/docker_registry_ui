@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Registry Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Docker Registry Manager</h1>
+    <button id="list-images">List Images</button>
+    <div id="images"></div>
+    <div id="delete-form" style="display: none;">
+        <h2>Delete Image</h2>
+        <form id="delete-image-form">
+            <label for="image-select">Select Image:</label>
+            <select id="image-select" name="image-select"></select>
+            <button type="submit">Delete</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
